@@ -1,0 +1,26 @@
+.super-herois-wrapper {
+    background-image: url("https://cdn.wallpapersafari.com/70/96/d7PBYH.png");
+    background-size: cover;
+    padding: 30px;
+    background-size: 100% 100%;
+}
+
+.super-herois-wrapper h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.super-herois-wrapper .input {
+    width: 500px;
+    padding: 0.25rem 0.5rem;
+}
+
+.input {
+    width: 500px;
+    padding: 0.25rem 0.5rem;
+    color: azure;
+}

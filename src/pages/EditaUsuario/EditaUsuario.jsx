@@ -1,6 +1,7 @@
 import { Button } from "react-bootstrap";
 import { usuarios } from "../../data/usuarios";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
+
 
 export function EditaUsuario() {
 
@@ -11,6 +12,12 @@ export function EditaUsuario() {
         return usuario.id === parseInt(id);
     });
 
+    let navigate = useNavigate();
+
+    function editar(){
+        navigate("/usuarios")
+    }
+
     return(
         <div className="edita-usuario">
             <h2>{usuario.nome}</h2>
@@ -18,7 +25,7 @@ export function EditaUsuario() {
             <br />
             <span>{usuario.idade} anos</span>
             <br />
-            <Button variant="dark">Editar</Button>
+            <Button onClick={editar} variant="dark">Editar</Button>
         </div>
     )
 }

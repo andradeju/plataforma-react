@@ -32,6 +32,18 @@ export function Menu(){
                     variant="link">
                     <Link to='/login'>Login</Link>     
                 </Button>
+                <Button 
+                    variant="link">
+                    <Link to='/pokemon'>Pokemon</Link>     
+                </Button>
+                <Button 
+                    variant="link">
+                    <Link to='/superherois'>Super-Heróis</Link>     
+                </Button>
+                <Button 
+                    variant="link">
+                    <Link to='/cadastroeletronicos'>Cadastro Eletrônicos</Link>     
+                </Button>
                 </Nav>
             </Container>
         </Navbar>
